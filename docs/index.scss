@@ -1,0 +1,138 @@
+$fontColor: rgb(106, 206, 252);
+$titleColor: rgb(27, 183, 255);
+$screenWidth: 1000px;
+body {
+  header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      list-style: none;
+      margin-right: 80px;
+      align-items: center;
+
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  .top {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+    @media screen and (max-width: $screenWidth) {
+      height: 300px;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 20px 0;
+      font-weight: normal;
+      color: $fontColor;
+      @media screen and (max-width: $screenWidth) {
+        font-size: 26px;
+      }
+    }
+    h2 {
+      color: $fontColor;
+      font-size: 50px;
+      font-weight: normal;
+      // margin: ;
+      @media screen and (max-width: $screenWidth) {
+        font-size: 21px;
+      }
+    }
+    .genre {
+      margin-top: 20px;
+      color: rgb(88, 88, 88);
+      span {
+        margin: 0 20px;
+        font-size: 24px;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .center {
+    .works {
+      // margin: auto;
+      padding: 0 30px 30px 30px;
+      h4 {
+        text-align: center;
+        margin-bottom: 100px;
+        color: gray;
+        // border-bottom: 2px solid gray;
+        display: block;
+        margin: 0 auto 70px auto;
+        font-size: 26px;
+        @media screen and (max-width: $screenWidth) {
+          font-size: 20px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+      .works-contents {
+        width: 60%;
+        // background-color: red;
+        margin: 20px auto;
+        @media screen and (max-width: $screenWidth) {
+          width: 100%;
+        }
+        .works-content {
+          padding: 20px 0 70px 0;
+          // background-color: pink;
+          border-bottom: solid 2px rgb(207, 207, 207);
+          .works-title {
+            display: flex;
+            margin: 0 0 35px 0;
+            font-size: 25px;
+            color: $titleColor;
+            i {
+              margin-right: 5px;
+            }
+          }
+          .content {
+            // background-color: gray;
+            .tags {
+              list-style: none;
+              display: flex;
+              li {
+                margin: 10px 10px 10px 0;
+                padding: 5px 15px;
+                background-color: rgb(235, 235, 235);
+                border-radius: 4px;
+              }
+            }
+            a {
+              padding: 20px 0;
+              display: inline-block;
+              color: blue;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  body {
+    background-color: red;
+  }
+}
+// @media screen and (max-width: $screenWidth) {
+//   /* 480px以下に適用されるCSS（スマホ用） */
+//   flex-direction: column;
+//   background-color: red;
+// }

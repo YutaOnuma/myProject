@@ -1,1 +1,104 @@
-<p>my</p>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   </head>
+  <body>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>Top</li>
+        <li>Works</li>
+      </ul>
+    </header>
+    <section class="top"  data-aos="zoom-in" data-aos-duration="1000">
+      <h2>Welcome to</h2>
+      <h1>Yuta Onuma's Portfolio</h1>
+      <div class="genre">
+        <span><i class="fas fa-gamepad"></i>Games</span>
+        <span><i class="fas fa-desktop"></i>WebServises</span>
+      </div>
+    </section>
+    <section class="center">
+      <div class="works">
+        <h4><i class="fas fa-list"></i>Works</h4>
+        <div class="works-contents">
+          <div class="works-content">
+            <div class="works-title">
+              <i class="far fa-dot-circle"></i><h2>ねとサギ</h2>
+
+            </div>
+            <div class="test_slider">
+              <div><img src="../images/netosagi1.png"></div>
+              <div><img src="../images/netosagi2.png"></div>
+              <div><img src="../images/netosagi3.png"></div>
+              <div><img src="../images/netosagi4.png"></div>
+              <div><img src="../images/netosagi5.png"></div>
+            </div> 
+            <div class="content">
+              <ul class="tags">
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+              </ul>
+              <a href="">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
+              <p>
+                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
+                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
+                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
+                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
+
+            </div>    
+          </div>
+          <div class="works-content">
+            <div class="works-title">
+              <i class="far fa-dot-circle"></i><h2>ねとサギ</h2>
+
+            </div>
+            <div class="test_slider">
+              <div><img src="../images/netosagi1.png"></div>
+              <div><img src="../images/netosagi2.png"></div>
+              <div><img src="../images/netosagi3.png"></div>
+              <div><img src="../images/netosagi4.png"></div>
+              <div><img src="../images/netosagi5.png"></div>
+            </div> 
+            <div class="content">
+              <ul class="tags">
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+              </ul>
+              <a href="">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
+              <p>
+                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
+                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
+                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
+                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
+
+            </div>    
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function(){
+        $('.test_slider').bxSlider();
+      });
+    </script>   
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- 初期化する -->
+     <script>
+       AOS.init();
+     </script>    
+     </body>
+</html>

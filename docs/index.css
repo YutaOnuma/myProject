@@ -1,0 +1,173 @@
+@charset "UTF-8";
+body header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header ul {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header ul li {
+  margin: 0 10px;
+}
+
+body .top {
+  text-align: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 660px;
+}
+
+@media screen and (max-width: 1000px) {
+  body .top {
+    height: 300px;
+  }
+}
+
+body .top h1 {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: normal;
+  color: #6acefc;
+}
+
+@media screen and (max-width: 1000px) {
+  body .top h1 {
+    font-size: 26px;
+  }
+}
+
+body .top h2 {
+  color: #6acefc;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1000px) {
+  body .top h2 {
+    font-size: 21px;
+  }
+}
+
+body .top .genre {
+  margin-top: 20px;
+  color: #585858;
+}
+
+body .top .genre span {
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+body .top .genre span i {
+  margin-right: 10px;
+}
+
+body .center .works {
+  padding: 0 30px 30px 30px;
+}
+
+body .center .works h4 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: gray;
+  display: block;
+  margin: 0 auto 70px auto;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1000px) {
+  body .center .works h4 {
+    font-size: 20px;
+  }
+}
+
+body .center .works h4 i {
+  margin-right: 10px;
+}
+
+body .center .works .works-contents {
+  width: 60%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1000px) {
+  body .center .works .works-contents {
+    width: 100%;
+  }
+}
+
+body .center .works .works-contents .works-content {
+  padding: 20px 0 70px 0;
+  border-bottom: solid 2px #cfcfcf;
+}
+
+body .center .works .works-contents .works-content .works-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 35px 0;
+  font-size: 25px;
+  color: #1bb7ff;
+}
+
+body .center .works .works-contents .works-content .works-title i {
+  margin-right: 5px;
+}
+
+body .center .works .works-contents .works-content .content .tags {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .center .works .works-contents .works-content .content .tags li {
+  margin: 10px 10px 10px 0;
+  padding: 5px 15px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+
+body .center .works .works-contents .works-content .content a {
+  padding: 20px 0;
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  body {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=index.css.map */
