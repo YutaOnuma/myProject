@@ -92,6 +92,7 @@ body .top .genre span i {
 }
 
 body .center .works {
+  margin-bottom: 80px;
   padding: 0 30px 30px 30px;
 }
 
@@ -100,7 +101,7 @@ body .center .works h4 {
   margin-bottom: 100px;
   color: gray;
   display: block;
-  margin: 0 auto 70px auto;
+  margin: 0 auto 0px auto;
   font-size: 26px;
 }
 
@@ -134,7 +135,7 @@ body .center .works .works-contents .works-content .works-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 35px 0;
+  margin: 35px 0 45px 0;
   font-size: 25px;
   color: #1bb7ff;
 }
@@ -148,6 +149,8 @@ body .center .works .works-contents .works-content .content .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .center .works .works-contents .works-content .content .tags li {
@@ -158,10 +161,14 @@ body .center .works .works-contents .works-content .content .tags li {
 }
 
 body .center .works .works-contents .works-content .content a {
-  padding: 20px 0;
+  padding: 30px 0;
   display: inline-block;
   color: blue;
   text-decoration: none;
+}
+
+body .center .works .works-contents .works-content p {
+  line-height: 1.8rem;
 }
 
 @media screen and (max-width: 480px) {
