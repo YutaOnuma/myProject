@@ -171,6 +171,38 @@ body .center .works .works-contents .works-content p {
   line-height: 1.8rem;
 }
 
+body footer {
+  height: 160px;
+  width: 100%;
+  background-color: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer .sns {
+  display: inline-block;
+}
+
+body footer .sns i {
+  margin: 0 30px;
+  font-size: 40px;
+  color: white;
+}
+
+body footer span {
+  color: #bdbdbd;
+}
+
 @media screen and (max-width: 480px) {
   /* 480px以下に適用されるCSS（スマホ用） */
   body {
