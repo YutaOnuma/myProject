@@ -1,15 +1,15 @@
-$fontColor: rgb(106, 206, 252);
-$titleColor: rgb(27, 183, 255);
+$fontColor: rgb(133, 180, 250);
+$titleColor: rgb(96, 157, 248);
 $screenWidth: 1000px;
 body {
   header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 253, 255);
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: flex-end;
     ul {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(242, 250, 253);
       display: flex;
       list-style: none;
       margin-right: 80px;
@@ -22,19 +22,19 @@ body {
   }
   .top {
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 251, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 660px;
+    height: 750px;
     @media screen and (max-width: $screenWidth) {
-      height: 300px;
+      height: 650px;
     }
 
     h1 {
       font-size: 60px;
-      margin: 20px 0;
+      margin: 30px 0;
       font-weight: normal;
       color: $fontColor;
       @media screen and (max-width: $screenWidth) {
@@ -53,11 +53,21 @@ body {
     .genre {
       margin-top: 20px;
       color: rgb(88, 88, 88);
+      @media screen and (max-width: $screenWidth) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       span {
         margin: 0 20px;
         font-size: 24px;
         i {
           margin-right: 10px;
+        }
+        @media screen and (max-width: $screenWidth) {
+          font-size: 16px;
+          margin: 10px 0;
         }
       }
     }
@@ -65,12 +75,11 @@ body {
   .center {
     .works {
       margin-bottom: 80px;
-      padding: 0 30px 30px 30px;
+      padding: 60px 30px 30px 30px;
       h4 {
         text-align: center;
         margin-bottom: 100px;
         color: gray;
-        // border-bottom: 2px solid gray;
         display: block;
         margin: 0 auto 0px auto;
         font-size: 26px;
@@ -83,18 +92,16 @@ body {
       }
       .works-contents {
         width: 60%;
-        // background-color: red;
         margin: 20px auto;
         @media screen and (max-width: $screenWidth) {
           width: 100%;
         }
         .works-content {
-          padding: 20px 0 70px 0;
-          // background-color: pink;
+          padding: 20px 0 50px 0;
           border-bottom: solid 2px rgb(207, 207, 207);
           .works-title {
             display: flex;
-            margin: 35px 0 45px 0;
+            margin: 45px 0 65px 0;
             font-size: 25px;
             color: $titleColor;
             i {
@@ -102,11 +109,11 @@ body {
             }
           }
           .content {
-            // background-color: gray;
             .tags {
               list-style: none;
               display: flex;
               flex-wrap: wrap;
+              padding-top: 20px;
               li {
                 margin: 10px 10px 10px 0;
                 padding: 5px 15px;
@@ -114,11 +121,29 @@ body {
                 border-radius: 4px;
               }
             }
-            a {
-              padding: 30px 0;
-              display: inline-block;
-              color: blue;
-              text-decoration: none;
+            .info {
+              display: flex;
+              flex-direction: column;
+              .period {
+                margin: 30px 0;
+              }
+              a {
+                margin: 0 0 20px 0;
+                display: inline-block;
+                color: rgb(17, 100, 253);
+                text-decoration: none;
+                &:hover {
+                  text-decoration: rgb(50, 134, 245) underline;
+                }
+              }
+            }
+            .ex {
+              .ex-title {
+                padding: 16px 0;
+                text-align: left;
+                font-size: 1rem;
+                color: $fontColor;
+              }
             }
           }
           p {
@@ -137,13 +162,14 @@ body {
     align-items: center;
     justify-content: space-around;
     .sns {
-      // background-color: skyblue;
       display: inline-block;
-      // margin: 0 auto;
       i {
         margin: 0 30px;
         font-size: 40px;
         color: white;
+        &:hover {
+          color: rgb(148, 165, 190);
+        }
       }
     }
     span {
@@ -157,8 +183,3 @@ body {
     background-color: red;
   }
 }
-// @media screen and (max-width: $screenWidth) {
-//   /* 480px以下に適用されるCSS（スマホ用） */
-//   flex-direction: column;
-//   background-color: red;
-// }

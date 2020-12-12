@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body header {
-  background-color: white;
+  background-color: #f8fdff;
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -12,7 +12,7 @@ body header {
 }
 
 body header ul {
-  background-color: white;
+  background-color: #f2fafd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@ body header ul li {
 
 body .top {
   text-align: center;
-  background-color: white;
+  background-color: #f8fbff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,20 +43,20 @@ body .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 660px;
+  height: 750px;
 }
 
 @media screen and (max-width: 1000px) {
   body .top {
-    height: 300px;
+    height: 650px;
   }
 }
 
 body .top h1 {
   font-size: 60px;
-  margin: 20px 0;
+  margin: 30px 0;
   font-weight: normal;
-  color: #6acefc;
+  color: #85b4fa;
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,7 +66,7 @@ body .top h1 {
 }
 
 body .top h2 {
-  color: #6acefc;
+  color: #85b4fa;
   font-size: 50px;
   font-weight: normal;
 }
@@ -82,6 +82,21 @@ body .top .genre {
   color: #585858;
 }
 
+@media screen and (max-width: 1000px) {
+  body .top .genre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 body .top .genre span {
   margin: 0 20px;
   font-size: 24px;
@@ -91,9 +106,16 @@ body .top .genre span i {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  body .top .genre span {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+
 body .center .works {
   margin-bottom: 80px;
-  padding: 0 30px 30px 30px;
+  padding: 60px 30px 30px 30px;
 }
 
 body .center .works h4 {
@@ -127,7 +149,7 @@ body .center .works .works-contents {
 }
 
 body .center .works .works-contents .works-content {
-  padding: 20px 0 70px 0;
+  padding: 20px 0 50px 0;
   border-bottom: solid 2px #cfcfcf;
 }
 
@@ -135,9 +157,9 @@ body .center .works .works-contents .works-content .works-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 35px 0 45px 0;
+  margin: 45px 0 65px 0;
   font-size: 25px;
-  color: #1bb7ff;
+  color: #609df8;
 }
 
 body .center .works .works-contents .works-content .works-title i {
@@ -151,6 +173,7 @@ body .center .works .works-contents .works-content .content .tags {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 body .center .works .works-contents .works-content .content .tags li {
@@ -160,11 +183,37 @@ body .center .works .works-contents .works-content .content .tags li {
   border-radius: 4px;
 }
 
-body .center .works .works-contents .works-content .content a {
-  padding: 30px 0;
+body .center .works .works-contents .works-content .content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .center .works .works-contents .works-content .content .info .period {
+  margin: 30px 0;
+}
+
+body .center .works .works-contents .works-content .content .info a {
+  margin: 0 0 20px 0;
   display: inline-block;
-  color: blue;
+  color: #1164fd;
   text-decoration: none;
+}
+
+body .center .works .works-contents .works-content .content .info a:hover {
+  -webkit-text-decoration: #3286f5 underline;
+          text-decoration: #3286f5 underline;
+}
+
+body .center .works .works-contents .works-content .content .ex .ex-title {
+  padding: 16px 0;
+  text-align: left;
+  font-size: 1rem;
+  color: #85b4fa;
 }
 
 body .center .works .works-contents .works-content p {
@@ -197,6 +246,10 @@ body footer .sns i {
   margin: 0 30px;
   font-size: 40px;
   color: white;
+}
+
+body footer .sns i:hover {
+  color: #94a5be;
 }
 
 body footer span {

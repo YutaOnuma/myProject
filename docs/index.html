@@ -3,43 +3,37 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Hello</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <title>Yuta Onuma's Portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-   </head>
+  </head>
   <body>
-    <header>
-      <ul>
-        <li>Home</li>
-        <li>Top</li>
-        <li>Works</li>
-      </ul>
-    </header>
     <section class="top"  data-aos="zoom-in" data-aos-duration="1000">
       <h2>Welcome to</h2>
       <h1>Yuta Onuma's Portfolio</h1>
       <div class="genre">
         <span><i class="fas fa-gamepad"></i>Games</span>
-        <span><i class="fas fa-desktop"></i>WebServises</span>
+        <span><i class="fas fa-desktop"></i>WebServices</span>
       </div>
     </section>
     <section class="center">
-      <div class="works">
-        <h4><i class="fas fa-list"></i>Works</h4>
+      <div class="works" data-aos="fade-right" data-aos-duration="500">
+        <h4>Works</h4>
         <div class="works-contents">
           <div class="works-content" data-aos="fade-right" data-aos-duration="500">
             <div class="works-title">
               <i class="fas fa-gamepad"></i><h2>MonsterEscape</h2>
-
             </div>
             <div class="test_slider" data-aos="fade-right" data-aos-duration="500">
               <div><img src="./images/monster3.png"></div>
               <div><img src="./images/monster1.png"></div>
               <div><img src="./images/monster2.png"></div>
+              <div><img src="./images/monster.png"></div>
+              <div><img src="./images/monster-2.png"></div>
               <div><img src="./images/monster4.png"></div>
               <div><img src="./images/monster5.png"></div>
               <div><img src="./images/monster6.png"></div>
@@ -51,13 +45,42 @@
                 <li>Unity</li>
                 <li>C#</li>
               </ul>
-              <a href="https://apps.apple.com/jp/app/monsterescape/id1499698718" target="_blank">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
-              <p>
-                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
-                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
-                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
-                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
-
+              <div class="info">
+                <span class="period">制作期間：2ヶ月</span>
+                <a href="https://apps.apple.com/jp/app/monsterescape/id1499698718" target="_blank">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <div class="ex">
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>概要</h4>
+                <p>
+                  変数も分からない状態からプログラミングを学んで、初めて制作したスマホ向け鬼ごっこゲームです。
+                  グラフィックとリアルさを追求し、「鬼ごっこ」を出来る限り再現しました。
+                  ただ逃げるだけではなく、鬼を倒すことが出来る「バトルモード」もあります。
+                  ルールは逃走モードでは鬼に捕まったら、バトルモーではプレイヤーのHPが0になったらゲームオーバーです。
+                  鬼はランダムにエリアを徘徊し、プレイヤーを見つけたら追いかけてきます。
+                  一定距離離れると鬼は徘徊に戻ります。 
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>制作背景</h4>
+                <p>
+                  二十歳になる直前、人生を振り返って「もう一度やりたいこと」を考えた際、鬼ごっこや逃○中をしたいなぁと思いました。しかし大人が現実世界で鬼ごっこや逃○中をやるのは気が引けます。そこで、それらがゲームの中でできたら同じスリル感を味わうことができると思い、制作にあたりました。  
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>機能</h4>
+                <p>
+                  ・鬼はエリアをランダムに徘徊する。個体はそれぞれ完全に徘徊ルートが異なる。逃走モードでは複数の種類の鬼が存在し、種類ごとにスピードや追跡距離などステータスが異なる。<br>
+                  ・プレイヤーはジョイスティック操作で移動できる。バトルモードでは鬼に攻撃ができる。<br>
+                  ・「回復」「スピードアップ」「一定時間無敵」のアイテムはランダム生成される。              
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>苦労した点</h4>
+                <p>
+                  ・鬼の完全ランダム徘徊<br>
+                  ・プレイヤーの移動と視点が独立したジョイスティック<br>
+                  ・建物や壁越しでプレイヤーを見つけた際は「見つけていない判定」にする。
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>今後の実装</h4>
+                <p>
+                  ・鬼にダメージを与えられないバグを修正<br>
+                  ・山や池など地形を豊にする。<br>
+                </p>
+              </div>
             </div>    
           </div>
           <div class="works-content" data-aos="fade-right" data-aos-duration="500">
@@ -65,7 +88,6 @@
               <i class="fas fa-desktop"></i><h2>ねとサギ</h2>
             </div>
             <div class="test_slider" data-aos="fade-right" data-aos-duration="500">
-              <div><img src="./images/netosagi1.png"></div>
               <div><img src="./images/netosagi2.png"></div>
               <div><img src="./images/netosagi3.png"></div>
               <div><img src="./images/netosagi4.png"></div>
@@ -83,19 +105,45 @@
                 <li>RDS</li>
                 <li>Route53</li>
               </ul>
-              <a href="">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
-              <p>
-                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
-                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
-                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
-                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
-
+              <div class="info">
+                <span class="period">制作期間：1ヶ月 リリース日：2020/12/8</span>
+                <a href="https://www.netosagi.com/" target="_blanck">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/YutaOnuma/netosagi" target="_blanck" >GitHub <i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <div class="ex">
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>概要</h4>
+                <p>
+                  インターネット詐欺を安全に擬似体験できるサービスです。<strong>不正なプログラムなどは一切ありません！</strong>
+                  インターン先でVue.jsやAWSを利用するため、学習のアウトプットとして作成しました。また、1ヶ月という納期を決め、0から制作・リリースまで実装しました。  
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>制作背景</h4>
+                <p>
+                  近頃、安倍総理の10万円や東京オリンピックの観戦チケット、不審SMSなどに関連し、フィッシング詐欺が急増している問題があります。実際にフィッシング詐欺は年々増加しており、誰がいつ被害に遭うか分かりません。実際、私の知人も被害に遭いました。手品のタネと同様に、予め擬似体験できれば実際に被害を受けても焦らず対処できると考え、制作にあたりました。
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>機能</h4>
+                <p>
+                  ・フロントエンドはVue、バックエンドはAPIとしてRailsが担当する。<br>
+                  ・フィッシング詐欺と偽広告が体験可能。<br>
+                  ・体験談を投稿し、共有することが可能。<br>
+                  ・荒れないように通報機能と管理者画面を実装。<br>               
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>苦労した点</h4>
+                <p>
+                  ・N+1問題への対処。<br>
+                  ・オリジナルのページネーション。<br>
+                  ・AWSでSSL化するまでのエラー対処。
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>今後の実装</h4>
+                <p>
+                  ・ログイン機能をDeviseから別の手段に変更し、完全なSPAにする。<br>
+                  ・体験可能なネット詐欺を増やす。
+                </p>
+              </div>
             </div>    
           </div>
           <div class="works-content" data-aos="fade-right" data-aos-duration="500">
             <div class="works-title">
               <i class="fas fa-desktop"></i><h2>GeekSalon</h2>
-
             </div>
             <div class="test_slider" data-aos="fade-right" data-aos-duration="500">
               <div><img src="./images/geek1.png"></div>
@@ -111,19 +159,28 @@
                 <li>jQuery</li>
                 <li>AWS</li>
               </ul>
+              <div class="info">
+                <span class="period">制作期間：―</span>
               <a href="https://geek-salon.com/" target="_blank">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
-              <p>
-                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
-                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
-                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
-                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
-
+              </div>
+              <div class="ex">
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>概要</h4>
+                <p>
+                  私のエンジニア長期インターン先である、大学生限定プログラミングコミュニティ「GeekSalon」のLPです。
+                  チーム開発で初めて制作したサービスです。エンジニアの実務の難しさ、やりがいを感じることができて非常に良い経験となりました。  
+                </p>
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>苦労した点</h4>
+                <p>
+                  ・個人開発とは比較にならないファイル数の多さに苦戦。<br>
+                  ・途中からジョインしたため、機能や仕組みを把握するのに時間がかかった。<br>
+                  ・エラーラッシュで環境構築に時間がかかり、挫折しそうになった。<br>
+                </p>
+              </div>
             </div>    
           </div>
           <div class="works-content" data-aos="fade-right" data-aos-duration="500">
             <div class="works-title">
               <i class="fas fa-desktop"></i><h2>GeekSalon Textbook</h2>
-
             </div>
             <div class="test_slider" data-aos="fade-right" data-aos-duration="500">
               <div><img src="./images/develop.png"></div>
@@ -138,13 +195,15 @@
                 <li>Firebase</li>
                 <li>Docker</li>
               </ul>
-              <a href="https://geek-salon.com/" target="_blank">この作品を見る　<i class="fas fa-external-link-alt"></i></a>
-              <p>
-                フリーフォントは利用規約でウェブでの埋め込みの使用が不可能な場合もあるのでチェックが必要です。
-                ウェブフォントとして利用することは、フォントを「ウェブサーバーに丸ごとアップする」必要があります。
-                アップしたデータはダウンロードが可能なため、「フォントの再配布」となってしまうわけですね。
-                また、軽量化のためにフォントをサブセット化する場合、「データの改変」になってしまう場合もあります。</p>
-
+              <div class="info">
+                <span class="period">制作期間：―</span>
+              </div>
+              <div class="ex">
+                <h4 class="ex-title"><i class="fas fa-dot-circle"></i>概要</h4>
+                <p>
+                  GeekSalonの新教材サイトです。企業秘密なので詳しい部分は述べませんが、０からのスタートです。現在企画の段階でゴリゴリと開発はしていませんが、裁量が大きく「プログラムを書く」以外のエンジニア業務も担当する予定です。 
+                </p>
+              </div>
             </div>    
           </div>
         </div>
@@ -152,10 +211,10 @@
     </section>
     <footer>
       <div class="sns">
-        <i class="fab fa-github"></i>
+        <a href="https://github.com/YutaOnuma/" target="_blanck"><i class="fab fa-github"></i></a>
         <i class="fab fa-twitter"></i>
       </div>
-      <span>(c) Yuta Onuma</span>
+      <span>© 2020 Yuta Onuma</span>
     </footer>
     <script>
       $(document).ready(function(){
@@ -166,5 +225,5 @@
      <script>
        AOS.init();
      </script>    
-     </body>
+  </body>
 </html>
