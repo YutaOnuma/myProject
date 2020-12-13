@@ -252,6 +252,13 @@ body footer .sns i:hover {
   color: #94a5be;
 }
 
+body footer .sns .qiita {
+  font-size: 40px !important;
+  margin: 0 30px;
+  text-decoration: none;
+  color: #55c500;
+}
+
 body footer span {
   color: #bdbdbd;
 }
