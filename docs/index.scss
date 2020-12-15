@@ -148,6 +148,10 @@ body {
           }
           p {
             line-height: 1.8rem;
+            @media screen and (max-width: $screenWidth) {
+              line-height: 1.5rem;
+              font-size: 14px;
+            }
           }
         }
       }

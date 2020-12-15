@@ -220,6 +220,13 @@ body .center .works .works-contents .works-content p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 1000px) {
+  body .center .works .works-contents .works-content p {
+    line-height: 1.5rem;
+    font-size: 14px;
+  }
+}
+
 body footer {
   height: 160px;
   width: 100%;
